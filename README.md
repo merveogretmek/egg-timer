@@ -97,6 +97,39 @@ private func playAlarmSound() {
 }
 ```
 
+Uses `AudioToolbox` to play a system sound when the timer reaches zero.
+
+## Requirements
+
+- iOS 14.0+
+- Xcode 12.0+
+- Swift 5.3 or higher
+
+## Installation and Running
+
+1. Clone the Repo
+
+```bash
+git clone https://github.com/your_username/egg-timer.git
+```
+
+2. Open in Xcode
+
+Double-click on `egg-timer.xcodeproj`.
+
+3. Build and Run
+
+- Select an iOS Simulator or a real device.
+- Hit the Run button in Xcode.
+
+4. Tap an Egg
+
+Choose your preferred doneness, and let the timer run!
+
+
+Contributions and suggestions are welcome!
+
+
 
 
 
