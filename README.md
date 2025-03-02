@@ -32,3 +32,40 @@ egg-timer/
 ├── egg-timerTests/
 └── egg-timerUITests/
 ```
+
+- `Assets.xcassets`: Contains the app icon and all egg images (drawn in Procreate).
+- `ContentView.swift`: The main SwiftUI file where the user interface, timer logic, and alarm sound are handled.
+- `egg_timerApp.swift`: The app entry point uses the SwiftUI `@main` app structure.
+- `egg-timer.xcodeproj/`: Xcode project file.
+- `egg-timerTests/` and `egg-timerUITests/`: Boilerplate test targets (currently empty).
+
+## How It Works
+
+1. Select Egg Type
+
+Tap on either the Soft, Medium, or Hard egg image. The timer will start automatically at the corresponding time.
+
+2. Watch the Countdown
+
+The remaining time is displayed in the middle of the screen in minutes and seconds (mm:ss format).
+
+3. Alarm
+
+When the timer hits zero, a built-in system sound plays to alert you that your eggs are ready.
+
+4. Reset
+
+To stop the timer or start over, tap the **Reset** button.
+
+
+
+
+
+
+
+
+
+
+
+
+
