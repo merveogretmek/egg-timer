@@ -57,7 +57,25 @@ When the timer hits zero, a built-in system sound plays to alert you that your e
 
 To stop the timer or start over, tap the **Reset** button.
 
+## Code Highlights
 
+- Timer Logic
+
+```swift
+let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
+
+// ...
+.onReceive(timer) { _ in
+    if timerIsRunning {
+        if timeRemaining > 0 {
+            timeRemaining -= 1
+        } else {
+            timerIsRunning = false
+            playAlarmSound()
+        }
+    }
+}
+```
 
 
 
