@@ -77,6 +77,25 @@ let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
 }
 ```
 
+- Color from Hex
+
+```swift
+extension Color {
+    init(hex: String) {
+        // ...
+    }
+}
+```
+
+Simple utility for using hex color strings in SwiftUI.
+
+- Audio Alert
+
+```swift
+private func playAlarmSound() {
+    AudioServicesPlaySystemSound(1005)
+}
+```
 
 
 
